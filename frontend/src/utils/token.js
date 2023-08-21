@@ -1,5 +1,5 @@
-const baseUrl ='http://localhost:3000'
-// const baseUrl ='https://auth.nomoreparties.co'
+// const baseUrl ='http://localhost:3000'
+const baseUrl ='https://auth.nomoreparties.co'
 
 const _checkResponse = (res) => {
   if (res.ok) return res.json();
