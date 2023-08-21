@@ -1,0 +1,16 @@
+.profile__userbutton{
+  border: 0;
+  padding: 0;
+  background: url(./../../../images/logo/popupButton.svg);
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 720px){
+  .profile__userbutton{
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+
+  }
+}

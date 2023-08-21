@@ -1,0 +1,12 @@
+.header__logo{
+  width: 142px;
+  height: 33px;
+  background-image:url(./../../../images/logo/header-logo.svg);
+  background-size: cover;
+}
+@media (max-width: 720px){
+  .header__logo{
+    width: calc(104px + (142 - 104) * ((100vw - 320px) / (720 - 320)));
+    height: calc(24px + (33 - 24) * ((100vw - 320px) / (720 - 320)));
+  }
+}

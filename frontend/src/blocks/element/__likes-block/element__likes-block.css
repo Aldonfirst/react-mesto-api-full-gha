@@ -1,0 +1,4 @@
+.element__likes-block{
+    display: grid;
+    gap: 5px;
+}

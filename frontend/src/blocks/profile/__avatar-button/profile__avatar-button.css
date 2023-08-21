@@ -1,0 +1,13 @@
+.profile__avatar-button{
+  width: 120px;
+  height: 120px;
+  background-image: url(../../../images/btnavatar.svg);
+  background-color: #000;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: center;
+  padding:0;
+  cursor: pointer;
+
+}

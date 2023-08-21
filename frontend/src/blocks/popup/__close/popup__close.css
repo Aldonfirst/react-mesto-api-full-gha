@@ -1,0 +1,22 @@
+.popup__close{
+  width: 32px;
+  height: 32px;
+  background-image: url(./../../../images/logo/closeformicon.svg);
+  background-color: transparent;
+  background-size: cover;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+@media (max-width: 720px){
+  .popup__close{
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: -37px;
+  }
+  }

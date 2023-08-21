@@ -1,0 +1,21 @@
+.profile__saveimage{
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  padding: 0;
+  border: 2px solid #fff;
+  background-image: url(./../../../images/logo/buttonforimage.svg);
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px;
+  justify-self: end;
+}
+
+@media (max-width: 900px){
+  .profile__saveimage{
+    width: 282px;
+    justify-self: center;
+    background-size: 16px;
+  }
+}

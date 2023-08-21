@@ -1,0 +1,15 @@
+.popup__imput-edit{
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 27px;
+  font-size: 14px;
+  line-height: 22px;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline:none;
+  padding:0 0 10px;
+  box-sizing: border-box;
+
+}
+
