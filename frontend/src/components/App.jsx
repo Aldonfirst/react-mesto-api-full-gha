@@ -60,16 +60,7 @@ export default function App() {
       })
       .catch((err) => console.error(err));
   }, [loggedIn]);
-  //logout
-  // function handleLogout() {
-  //   auth.signout()
-  //     .then(() => {
-  //       localStorage.removeItem('jwt');
-  //       setUserEmail('');
-  //       setLoggedIn(false);
-  //     })
-  //     .catch((err) => console.error(err));
-  // }
+
   function handleLogout() {
     localStorage.removeItem('jwt');
     auth.logout()
