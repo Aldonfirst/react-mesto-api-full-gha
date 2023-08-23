@@ -5,12 +5,12 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
+Адрес репозитория: https://github.com/Aldonfirst/react-mesto-api-full-gha.git
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.118.157
 
-Frontend https://...
+Frontend https://aldon.nomoredomainsicu.ru
 
-Backend https://...
+Backend https://api.aldon.nomoredomainsicu.ru

@@ -16,7 +16,6 @@ router.get('/crash-test', () => {
 
 router.post('/signup', validateSignUp, createUser);
 router.post('/signin', validateLogin, login);
-
 router.use(authMiddleware);
 
 router.get('/signout', (req, res) => {
