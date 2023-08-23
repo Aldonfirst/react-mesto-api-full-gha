@@ -18,7 +18,11 @@ const { PORT, DB_URL } = process.env;
 mongoose.connect(DB_URL, { useNewUrlParser: true });
 
 const app = express();
-app.use(cors({ credentials: true, origin: ['http://localhost:3001', 'https://aldon.nomoredomainsicu.ru'] }));
+app.use(cors({
+  credentials: true,
+  maxAge: 15,
+  origin: 'https://aldon.nomoredomainsicu.ru',
+}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
