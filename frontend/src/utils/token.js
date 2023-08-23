@@ -1,4 +1,5 @@
-
+// const baseUrl ='http://localhost:3000'
+// const baseUrl ='https://auth.nomoreparties.co'
 const baseUrl ='api.aldon.nomoredomainsicu.ru'
 const _checkResponse = (res) => {
   if (res.ok) return res.json();
