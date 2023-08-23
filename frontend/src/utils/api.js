@@ -96,7 +96,7 @@ const api = new Api({
   //   'Content-Type': 'application/json'
   // }
   // url: 'http://localhost:3000',
-  url: 'aldon.nomoredomainsicu.ru',
+  url: 'https://api.aldon.nomoredomainsicu.ru',
   headers: {
     'Content-Type': 'application/json'
   }
