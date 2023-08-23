@@ -141,7 +141,8 @@ export default function App() {
     api
       .deleteMyCard(isDeleteCard)
       .then(() => {
-        setCards((state) => state.filter((c) => c._id !== isDeleteCard));
+        setCards((state) => state.filter((c) => c._id !== isDeleteCard._id));
+      console.log(isDeleteCard)
         closeAllPopups();
       })
       .catch((err) => console.error(err));
