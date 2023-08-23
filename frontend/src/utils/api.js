@@ -90,7 +90,7 @@ class Api {
 }
 
 const api = new Api({
-  
+
   url: 'aldon.nomoredomainsicu.ru',
   headers: {
     'Content-Type': 'application/json'

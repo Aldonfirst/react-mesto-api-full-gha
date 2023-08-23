@@ -11,6 +11,6 @@
 
 IP-адрес: IP 158.160.118.157
 
-Frontend: Frontend https://aldon.nomoredomainsicu.ru
+Frontend: https://aldon.nomoredomainsicu.ru
 
-Backend: Backend https://api.aldon.nomoredomainsicu.ru
+Backend: https://api.aldon.nomoredomainsicu.ru
