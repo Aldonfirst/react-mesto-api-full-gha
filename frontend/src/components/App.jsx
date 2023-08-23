@@ -56,7 +56,7 @@ export default function App() {
       .then(([userData, cardsData]) => {
         setCurrentUser(userData);
         setCards(cardsData);
-        cardsData.forEach(item => item.myId = userData._id)
+        cardsData.map(item => item.myId = userData._id)
       })
       .catch((err) => console.error(err));
   }, [loggedIn]);
@@ -104,7 +104,7 @@ export default function App() {
   //новая карточка
   function handleAddPlaceSubmit(newCard) {
     api.addCard(newCard)
-      .then((newCard) => {
+      .then((newCard) => { 
         setCards([newCard, ...cards]);
         closeAllPopups();
       })
@@ -141,8 +141,7 @@ export default function App() {
     api
       .deleteMyCard(isDeleteCard)
       .then(() => {
-        setCards((state) => state.filter((c) => c._id !== isDeleteCard._id));
-      console.log(isDeleteCard)
+        setCards((state) => state.filter((c) => c._id !== isDeleteCard));
         closeAllPopups();
       })
       .catch((err) => console.error(err));

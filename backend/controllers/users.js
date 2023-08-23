@@ -58,7 +58,7 @@ module.exports.login = (req, res, next) => {
       console.log(user);
       const token = jwt.sign(
         { _id: user._id },
-        SECRET_KEY,
+        process.env.NODE_ENV === 'production' ? SECRET_KEY : 'dev-secret',
         { expiresIn: '7d' },
       );
       res.cookie('token', token, { httpOnly: true }).send({ token });
