@@ -1,6 +1,6 @@
 // const baseUrl ='http://localhost:3000'
 // const baseUrl ='https://auth.nomoreparties.co'
-const baseUrl ='https://aldon.nomoredomainsicu.ru'
+const baseUrl ='https://api.aldon.nomoredomainsicu.ru'
 const _checkResponse = (res) => {
   if (res.ok) return res.json();
   return Promise.reject(`Ошибка ${res.status}`);
@@ -52,7 +52,7 @@ const getToken = (token) => {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      // Authorization: `Bearer ${token}`,
     },
     credentials: 'include',
   })
