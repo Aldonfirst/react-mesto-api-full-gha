@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес: IP 158.160.118.157
+IP-адрес: 158.160.118.157
 
 Frontend https://aldon.nomoredomainsicu.ru
 
