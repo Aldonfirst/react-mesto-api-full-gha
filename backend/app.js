@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const { errors } = require('celebrate');
 const limiter = require('./utils/limiter');
-const { PORT, DB_ADDRESS } = require('./utils/config');
+const { PORT, DB_URL } = require('./utils/config');
 const router = require('./routes/routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
@@ -15,7 +15,7 @@ const errorHandler = require('./middlewares/errorHandler');
 
 // const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 
-mongoose.connect(DB_ADDRESS, { useNewUrlParser: true });
+mongoose.connect(DB_URL, { useNewUrlParser: true });
 
 const app = express();
 app.use(cors({
