@@ -11,7 +11,7 @@ function authMiddleware(req, res, next) {
   }
 
   try {
-    const payload = jwt.verify(token, process.env.NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
+    const payload = jwt.verify(token, JWT_SECRET);
     req.user = payload;
     next();
   } catch (err) {
