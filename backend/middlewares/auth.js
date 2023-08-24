@@ -1,8 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 const UnauthorizedError = require('../utils/errorsCatch/UnauthorizedError');
-// const { SECRET_KEY } = require('../utils/constants');
-const SECRET_KEY = process.env.JWT_SECRET;
+const { JWT_SECRET } = require('../utils/config');
 
 function authMiddleware(req, res, next) {
   const { token } = req.cookies;
@@ -12,7 +11,7 @@ function authMiddleware(req, res, next) {
   }
 
   try {
-    const payload = jwt.verify(token, process.env.NODE_ENV === 'production' ? SECRET_KEY : 'dev-secret');
+    const payload = jwt.verify(token, process.env.NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
     req.user = payload;
     next();
   } catch (err) {
