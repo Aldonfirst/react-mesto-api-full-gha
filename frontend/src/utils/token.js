@@ -1,6 +1,6 @@
-// const baseUrl ='http://localhost:3000'
-// // // const baseUrl ='https://auth.nomoreparties.co'
-const baseUrl ='https://api.aldon.nomoredomainsicu.ru'
+const baseUrl ='http://localhost:3000'
+// // const baseUrl ='https://auth.nomoreparties.co'
+// const baseUrl ='https://api.aldon.nomoredomainsicu.ru'
 const _checkResponse = (res) => {
   if (res.ok) return res.json();
   return Promise.reject(`Ошибка ${res.status}`);

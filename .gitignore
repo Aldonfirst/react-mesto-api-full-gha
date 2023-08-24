@@ -28,10 +28,10 @@ logs
 npm-debug.log*
 
 .npm
-
-
 .idea
 .vscode
+
+node_modules
 
 build
 

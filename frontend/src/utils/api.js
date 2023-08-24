@@ -97,8 +97,8 @@ const api = new Api({
   //   authorization: 'ab469772-0963-4d99-942b-83403a537f18',
   //   'Content-Type': 'application/json'
   // }
-  // url: 'http://localhost:3000',
-  url: 'https://api.aldon.nomoredomainsicu.ru',
+  url: 'http://localhost:3000',
+  // url: 'https://api.aldon.nomoredomainsicu.ru',
   headers: {
     'Content-Type': 'application/json'
   }

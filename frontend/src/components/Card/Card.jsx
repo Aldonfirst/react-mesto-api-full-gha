@@ -3,7 +3,7 @@ import CurrentUserContext from "../../contexts/contexts";
 
 export default function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const currentUser = useContext(CurrentUserContext);
-  const isTrash = card._id !== currentUser._id;
+  const isTrash = card.owner === currentUser._id;
   const isLiked = card.likes.find((like) => like._id === currentUser._id);
 
     return (
@@ -24,7 +24,7 @@ export default function Card({ card, onCardClick, onCardLike, onCardDelete }) {
                     </span>
                 </div>
             <button type="button" name="trash"
-                    className={`button-pointer element__garbage ${isTrash ? 'element__garbage_visible' : ''}`}
+                    className={`button-pointer ${isTrash ? 'element__garbage' : 'element__garbage_visible'}`}
                     onClick={()=>onCardDelete(card._id)}
                 />
             </div>
