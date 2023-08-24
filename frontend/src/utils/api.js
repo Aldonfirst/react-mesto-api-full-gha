@@ -92,7 +92,11 @@ class Api {
 }
 
 const api = new Api({
-
+  // url: 'https://mesto.nomoreparties.co/v1/cohort-66',
+  // headers: {
+  //   authorization: 'ab469772-0963-4d99-942b-83403a537f18',
+  //   'Content-Type': 'application/json'
+  // }
   // url: 'http://localhost:3000',
   url: 'https://api.aldon.nomoredomainsicu.ru',
   headers: {
