@@ -21,7 +21,7 @@ const app = express();
 app.use(cors({
   credentials: true,
   maxAge: 15,
-  origin: ['http://localhost:3001', 'https://aldon.nomoredomainsicu.ru'],
+  origin: 'https://aldon.nomoredomainsicu.ru',
 }));
 
 app.use(bodyParser.json());
