@@ -55,7 +55,7 @@ export default function App() {
     loggedIn && Promise.all([api.getUserData(), api.getInitialCards()])
       .then(([userData, cardsData]) => {
         setCurrentUser(userData);
-        setCards(cardsData);
+        setCards(cardsData.reverse());
         cardsData.map(item => item.myId = userData._id)
       })
       .catch((err) => console.error(err));
