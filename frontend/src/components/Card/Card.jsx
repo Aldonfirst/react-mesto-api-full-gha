@@ -4,7 +4,7 @@ import CurrentUserContext from "../../contexts/contexts";
 export default function Card({ card, onCardClick, onCardLike, onCardDelete }) {
   const currentUser = useContext(CurrentUserContext);
   const isTrash = card.owner === currentUser._id;
-  const isLiked = card.likes.find((like) => like._id === currentUser._id);
+  const isLiked = card.likes.find((like) => like === currentUser._id);
 
     return (
         <article className="element__item"

@@ -118,7 +118,7 @@ export default function App() {
   }
   //лайки
   function handleCardLike(card) {
-    const isLiked = card.likes.find((i) => i._id === currentUser._id);
+    const isLiked = card.likes.find((i) => i === currentUser._id);
     api.changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
         setCards((state) =>

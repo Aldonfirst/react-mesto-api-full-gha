@@ -5,7 +5,6 @@ const BadRequestError = require('../utils/errorsCatch/BadRequestError');
 
 module.exports.getCards = (req, res, next) => {
   Card.find()
-    .populate(['likes'])
     .then((cards) => res.send(cards))
     .catch((err) => next(err));
 };
@@ -51,7 +50,6 @@ module.exports.likeCard = (req, res, next) => {
     { $addToSet: { likes: req.user._id } },
     { new: true },
   )
-    .populate(['likes'])
     .then((card) => {
       if (!card) {
         throw new NotFoundError('Карточка не найдена');
@@ -67,7 +65,6 @@ module.exports.dislikeCard = (req, res, next) => {
     { $pull: { likes: req.user._id } },
     { new: true },
   )
-    .populate(['likes'])
     .then((card) => {
       if (!card) {
         throw new NotFoundError('Карточка не найдена');
