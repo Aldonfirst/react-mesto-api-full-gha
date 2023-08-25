@@ -24,7 +24,7 @@ export default function Card({ card, onCardClick, onCardLike, onCardDelete }) {
                     </span>
                 </div>
             <button type="button" name="trash"
-                    className={`button-pointer  ${isTrash ? 'element__garbage_visible' : 'element__garbage'}`}
+                    className={`button-pointer element__garbage ${isTrash ? 'element__garbage_visible' : ''}`}
                     onClick={()=>onCardDelete(card._id)}
                 />
             </div>
