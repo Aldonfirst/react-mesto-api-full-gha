@@ -124,11 +124,11 @@ export default function App() {
         setCards((state) =>
           state.map((c) =>
             (c._id === card._id ? newCard : c)));
-
       })
       .catch((error) => {
         console.error(error);
       });
+
 
   }
   function handleCardDelete(cardId) {
